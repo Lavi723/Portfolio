@@ -241,6 +241,6 @@ button:hover {
     }
 
     .circle:nth-child(2) {
-        border: 0.5rem solid white;
+        border: 0.2rem solid white;
     }
 }
