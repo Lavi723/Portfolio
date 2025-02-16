@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "portfolio", "portfolio", "{0BC2284B-949F-409D-B167-4E49B4750753}"
+	ProjectSection(SolutionItems) = preProject
+		index.html = index.html
+		StyleSheet1.css = StyleSheet1.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "image", "image", "{6F5F8E32-9F61-45CB-9DE8-6E6863B106D1}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\image.jpg = ..\..\..\..\..\image.jpg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "navlist", "navlist", "{249BA01C-1044-4A8F-8A43-672A0A8F4E68}"
+	ProjectSection(SolutionItems) = preProject
+		about.html = about.html
+		Skill.html = Skill.html
+		ExperienceStyleSheet.css = ExperienceStyleSheet.css
+		aboutStyleSheet2.css = aboutStyleSheet2.css
+		expirence.html = expirence.html
+		StyleSheet2skill.css = StyleSheet2skill.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{48539892-6831-474D-9B54-5A38A86691E8}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Downloads\asp.png = ..\..\..\Downloads\asp.png
+		..\..\..\Downloads\c#.png = ..\..\..\Downloads\c#.png
+		..\..\..\Downloads\c++.png = ..\..\..\Downloads\c++.png
+		..\..\..\Downloads\css.png = ..\..\..\Downloads\css.png
+		..\..\..\Downloads\html.png = ..\..\..\Downloads\html.png
+		..\..\..\Downloads\icons8-c-50.png = ..\..\..\Downloads\icons8-c-50.png
+		..\..\..\Downloads\python.png = ..\..\..\Downloads\python.png
+		..\..\..\Downloads\sql.png = ..\..\..\Downloads\sql.png
+		..\..\..\Downloads\tableau.png = ..\..\..\Downloads\tableau.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6F5F8E32-9F61-45CB-9DE8-6E6863B106D1} = {0BC2284B-949F-409D-B167-4E49B4750753}
+		{249BA01C-1044-4A8F-8A43-672A0A8F4E68} = {0BC2284B-949F-409D-B167-4E49B4750753}
+		{48539892-6831-474D-9B54-5A38A86691E8} = {249BA01C-1044-4A8F-8A43-672A0A8F4E68}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0AB7BFB-1689-4595-A6D3-2C383C7D732A}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,247 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.portfolio-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.navlist {
+    display: flex;
+    gap: 3.5rem;
+    height: 13vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    position: absolute
+}
+
+.navlist li {
+    list-style: none;
+}
+.navlist li a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1rem;
+            color: white;
+            position:relative;
+}
+
+.left-container {
+    background: #262525;
+    width: 70%;
+    padding-left: 3rem;
+}
+
+.right-container {
+    background: linear-gradient(-45deg,#3877FF,#262525 70% );
+    width: 30%
+}
+
+.left-container, .right-container {
+    /*height: 100vh;*/
+    display: flex;
+    align-items: center;
+}
+
+.icons .fa-brands {
+    color: white;
+    font-size: 1.7rem;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.content {
+    margin-left: 4rem;
+}
+
+    .content .intro{
+        font-size: 1.5rem;
+        color:#fff;
+    }
+    .content .intro span {
+        color: #5db9ee;
+    }
+
+    .content h1 {
+        font-size: 4rem;
+        color:#5db9ee;
+    }
+.content .detail{
+    font-size:1.1rem;
+    color:#fff;
+    max-width:38rem;
+    margin:1.1rem 0 3rem 0;
+    line-height:1.8rem;
+}
+.btn-container button{
+    border:.1rem solid #5db9ee;
+    font-size:1.1rem;
+    padding:.8rem 1.5rem;
+    border-radius:.5rem;
+    cursor:pointer;
+    background:transparent;
+    color:#5db9ee;
+    transition:.4s ease-in;
+}
+button:hover{
+    background:#5db9ee;
+    color:#262525;
+}
+.icons .fa-brands:hover {
+    cursor: pointer;
+    background: linear-gradient(white,#5db9ee);
+   /* -webkit-background-clip: text;*/
+    -webkit-text-fill-color: transparent;
+}
+.design .circle {
+    border-radius: 100%;
+    position: absolute;
+    aspect-ratio: 1; /* do not need ot give the height and width in the circle */
+    top:50%;left:70%;
+    transform:translate(-50%,-50%);
+
+}
+.circle:nth-child(1) {
+    background: linear-gradient(90deg,transparent 50%,#262525 50%);
+    width: 38rem;    
+}
+.circle:nth-child(2) {
+    width: 30rem;
+    background-image: url("image.jpg");
+    background-size: 110%;
+    background-repeat: no-repeat;
+    border: 1rem solid white;
+    box-shadow: 0 0 1rem #fff,inset 0 0 1rem #fff,
+        0 0 2rem #3877FF, 
+        inset 0 0 2rem #3877FF,
+         0 0 4rem #3877FF,inset 0 0 4rem #3877FF;
+}
+
+.left-container-skill {
+    background: #262525;
+    width: 100%;
+    padding-left: 3rem;
+}
+
+.navlist li a::after{
+    content:"";
+    position:absolute;
+    background:white;
+    width:100%;
+    height:.1rem;
+    left:0;
+    bottom:-5px;
+    transform:scaleX(0);
+    transform-origin:bottom right;
+   transition: transform 0.5s;
+}
+.navlist li a:hover::after{
+    transform:scaleX(1);
+    transform-origin:bottom left;
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .portfolio-container {
+
+       
+    }
+    .right-container {
+        
+    }
+    .design .circle {
+        width: 20rem;
+        top: 50%;
+        left: 80%;
+    }
+
+        /*  .left-container, .right-container {
+        width: 100%;
+        height: auto;
+       
+    }*/
+
+        .content h1 {
+        font-size: 3rem;
+    }
+
+    .content .detail {
+        font-size: 1rem;
+        margin-right: 6rem;
+    }
+
+}
+
+@media (max-width: 720px) {
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .content .detail {
+        font-size: 0.95rem;
+    }
+    .right-container {
+        display: none;
+    }
+    .left-container{
+        width:100%
+    }
+
+}
+
+@media (max-width: 480px) {
+    .design .circle {
+        width: 10rem;
+        top: 30%;
+        left: 50%;
+    }
+    .left-container {
+        padding-left: 30px;
+        height:none;
+    }
+    .content {
+        margin-left: 1rem;
+        margin-top: 330px;
+    }
+
+        .content h1 {
+            font-size: 2rem;
+        }
+
+        .content .detail {
+            font-size: 0.85rem;
+            margin-right: 12px;
+            flex-grow: 1;
+        }
+
+     .left-container icons{
+         gap:2rem;
+     }
+
+    .navlist {
+        gap: 2rem;
+        font-size:1rem;
+    }
+    .icons {
+        padding-top: 250px;
+        gap:2.6rem;
+    }
+    .btn-container{
+        padding-bottom:50px;
+    }
+
+}
